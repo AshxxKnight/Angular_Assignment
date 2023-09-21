@@ -1,0 +1,30 @@
+<!-- <p>slp works!</p> -->
+<!-- <p>tlp works!</p> -->
+<body class="vh-100">
+    <main class="vh-100 d-flex align-items-center justify-conent-center">
+        <div class="container">
+            <div style="background-color: hsl(40, 5%, 90%);">
+                <p class="m-0 px-3 py-1 fs-3 fw-bold text-primary">Login</p>
+            </div>
+            <form class="px-3 py-1" style="background-color: hsla(40, 5%, 95%, 0.3);">
+                <div class="row my-3">
+                    <label class="col-2 form-label" for="username">Name:</label>
+                    <div class="col-6">
+                        <input class="form-control" type="text" name="uname" id="username">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <label class="col-2 form-label" for="rollno">Roll No.:</label>
+                    <div class="col-6">
+                        <input class="form-control" type="number" name="rno" id="rollno">
+                    </div>
+                </div>
+                <div class="container-fluid w-100% p-1">
+                        <button class="d-block ms-auto btn btn-outline-info" (click) = "onsubmit()" type="submit">Search</button>
+                        <button class="d-block ms-auto btn btn-outline-warning" type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <router-outlet></router-outlet>
+    <!-- login page -->
